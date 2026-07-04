@@ -189,6 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    padding: 0px 99px;
 }
 
 .project-row-card {

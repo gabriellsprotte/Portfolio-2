@@ -42,24 +42,24 @@
 </script>
 
 <template>
-<section id="projects" class="page-section">
-    <div class="container">
-        <div class="split-hero-container">
-            <h1>Projects</h1>
-            <p>Explore a selection of my work, showcasing how I approach design challenges. Each project reflects my commitment to creating user-centered experiences that blend functionality with aesthetic appeal.</p>
+    <section id="projects" class="page-section">
+        <div class="container">
+            <div class="split-hero-container">
+                <h1>Projects</h1>
+                <p>Explore a selection of my work, showcasing how I approach design challenges. Each project reflects my commitment to creating user-centered experiences that blend functionality with aesthetic appeal.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="projects-list">
-        <div class="content-box project-row-card" v-for="post in posts">
-            <div class="project-simple-header">
-                <h2>{{ post.title }}</h2>
-                <p class="project-subtitle">{{ post.description }}</p>
-            </div>
-            <div class="main-project-image">
-                <img :src="'/images/'+post.image" alt="">
+        <div class="projects-list">
+            <div class="content-box project-row-card" v-for="post in posts">
+                <div class="project-simple-header">
+                    <h2>{{ post.title }}</h2>
+                    <p class="project-subtitle">{{ post.description }}</p>
+                </div>
+                <div class="main-project-image">
+                    <img :src="'images/'+post.image" alt="">
+                </div>
             </div>
         </div>
-    </div>
-        </section>
+    </section>
 </template>
